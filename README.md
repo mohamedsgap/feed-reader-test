@@ -6,7 +6,7 @@ Using Jasmine to write a number of tests against a pre-existing application.
 * In this Project, Jasmine testing Suite was Used to Test for Various Conditions & Functionality.
 * Wrote Tests Suites to Test The Functionality Tests & Behaviour Changes.
 * Using Jasmine to write a number of tests against a pre-existing application.
-
+* Test the underlying business logic of the application as well as the event handling and DOM manipulation.
 
 ### Testing!
 
