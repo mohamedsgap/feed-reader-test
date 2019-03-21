@@ -64,6 +64,7 @@ $(function() {
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
          */
+        const body= document.querySelector('body');
         it('the menu element is hidden by default', function() {
             const body= document.querySelector('body');
             expect(body).toHaveClass('menu-hidden');
@@ -74,6 +75,14 @@ $(function() {
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
+
+        it('the menu changes visibility', function(){
+           const body= document.querySelector('body');
+           const menu= document.querySelector(".menu-icon-link");
+           menu.click();
+            expect(body).not.toHaveClass('menu-hidden');  
+        });
+
         }); 
     /* TODO: Write a new test suite named "Initial Entries" */
 
