@@ -109,6 +109,23 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+    describe('New Feed Selection', function(){
+        const feed = document.querySelector('.feed');
+        const firstFeed = [];
+        beforeEach(function(done){
+            loadFeed(0);
+            Array.from(feed.children).forEach(function(entry){
+                firstFeed.push(entry.innerText);
+
+            });
+            loadFeed(1, done);
+
+        });
+        it('new feed loaded successfully!', function(){
+
+        });
+
+    });    
 
 
 
