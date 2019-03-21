@@ -122,6 +122,11 @@ $(function() {
 
         });
         it('new feed loaded successfully!', function(){
+            Array.from(feed.children).forEach(function(entry, index){
+                //console.log(entry.innerText , firstFeed[index],entry.innerText === firstFeed[index])
+                expect(entry.innerText === firstFeed[index]).toBe(false);
+
+            });
 
         });
 
